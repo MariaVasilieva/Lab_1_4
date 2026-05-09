@@ -20,12 +20,17 @@ public class Main {
 //        System.out.println("Масив після сортування бульбашкою:");
 //        printList(list);
         //2 рівень
+//        System.out.println("Масив перед сортуванням:");
+//        printList(list);
+//        Student[] sortedArray = sortByIndex(list);
+//        System.out.println("Масив після сортування по індексам:");
+//        printList(sortedArray);
+        //3 рівень
         System.out.println("Масив перед сортуванням:");
         printList(list);
-        Student[] sortedArray = sortByIndex(list);
-        System.out.println("Масив після сортування по індексам:");
-        printList(sortedArray);
-
+        quickMedianSort(list,0,list.length-1);
+        System.out.println("Масив після сортування:");
+        printList(list);
     }
 
     public static void bubbleSort(Student [] list){
